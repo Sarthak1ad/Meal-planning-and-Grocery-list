@@ -13,12 +13,9 @@ recipes = {
     'Stir-fry': ['chicken', 'soy sauce', 'broccoli', 'carrot', 'bell pepper']
 }
 
-# Step 2: Function to add ingredients
-def add_ingredients():
+# Step 2: def get_available_ingredients():
     ingredients = input("Enter the ingredients you have, separated by commas: ")
-    new_ingredients = [ingredient.strip().lower() for ingredient in ingredients.split(',')]
-    available_ingredients.extend(new_ingredients)
-    print("\nIngredients added successfully!\n")
+    return [ingredient.strip().lower() for ingredient in ingredients.split(',')]
 
 # Step 3: Function to display available ingredients
 def display_ingredients():
